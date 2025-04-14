@@ -49,7 +49,7 @@
 <body>
   <header>
   <h1><a href="">Enviar para toda angola ➡️</a></h1>
- <h1><a href="https://wa.me/931273985?text=Queria%20saber%20sobre%20alguns%20jogos">📞  conversar pelo whtsApp <section class="de">
+ <h1><a href="https://wa.me/931273985?text=Queria%20saber%20sobre%20alguns%20jogos">📞  conversar pelo whtsApp  </h1><section class="de">
 <img src="gm1-Recuperado copiar.png" alt="" class="im">
 </section>  
 <div class="search-container">
@@ -247,21 +247,17 @@
 
 <!-- SCRIPT DE FILTRO -->
 <script>
-  const input = document.getElementById("searchInput");
+    const input = document.getElementById("searchInput");
 
-  input.addEventListener("input", (event) => {
-    const searchValue = event.target.value.toLowerCase().trim();
-    const items = document.querySelectorAll(".item");
+    input.addEventListener("input", (event) => {
+      const valor = event.target.value.toLowerCase().trim();
+      const itens = document.querySelectorAll(".item");
 
-    items.forEach((item) => {
-      const text = item.textContent.toLowerCase();
-      if (text.includes(searchValue) || searchValue === "") {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
+      itens.forEach((item) => {
+        const texto = item.textContent.toLowerCase();
+        item.style.display = texto.includes(valor) ? "block" : "none";
+      });
     });
-  });
 </script>
 
 l
